@@ -14,7 +14,7 @@ public class AcademyService {
     @Autowired
     private AcademyDao academyDao;
 
-    @DataSourceConnection(DataBaseContextHolder.DataBaseType.POSTGRESEAS)
+    @DataSourceConnection(DataBaseContextHolder.DataBaseType.MYSQLIDATA)
     public List<Academy> queryAll(){
         return academyDao.queryAll();
     }

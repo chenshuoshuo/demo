@@ -16,20 +16,29 @@ druid:
   type: com.alibaba.druid.pool.DruidDataSource
   postgresdefault:
     dirver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://172.18.156.113:5432/vtpl
+    url: jdbc:postgresql://192.168.4.240:5432/xcu_vtpl
     username: postgres
-    password: lqkj!@#456
+    password: postgres
   postgresgis:
     dirver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://202.196.16.81:5432/hngydx
+    url: jdbc:postgresql://192.168.4.240:5432/xcu_xcu
     username: postgres
     password: postgres
   postgres-eas:
     dirver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://202.196.16.81:5432/CMCCI
+    url: jdbc:postgresql://192.168.4.240:5432/xcu_cmcci
     username: postgres
     password: postgres
-
+  mysqlruijieidata:
+    dirver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://202.115.62.47:5000/vtpl
+    username: root
+    password: scuSCU!515
+#  mysqlruijieidata:
+#    dirver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://211.149.141.72:5432/xcu_cmcci
+#    username: postgres
+#    password: lqkj!@#456
 mybatis:
   configuration:
     map-underscore-to-camel-case: true

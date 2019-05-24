@@ -53,13 +53,13 @@ public class DataSourceConfiguration {
     }
 
 
-//    @Bean(name = "mysqlSlaveOneDataSource")
-//    @ConfigurationProperties(prefix = "druid.mysqlslaveone")
-//    public DataSource mysqlSlaveDataSource() {
-//        DataSource mysqlSlaveDataSource = DataSourceBuilder.create().type(dataSourceType).build();
-//        System.out.println("=============msyqlSlave" + mysqlSlaveDataSource);
-//        return mysqlSlaveDataSource;
-//    }
+    @Bean(name = "mysqlIdataDataSource")
+    @ConfigurationProperties(prefix = "druid.mysqlruijieidata")
+    public DataSource mysqlSlaveDataSource() {
+        DataSource mysqlIdataDataSource = DataSourceBuilder.create().type(dataSourceType).build();
+        System.out.println("=============msyqlSlave" + mysqlIdataDataSource);
+        return mysqlIdataDataSource;
+    }
 
 
     @Bean

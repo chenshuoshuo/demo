@@ -292,6 +292,13 @@
 			<version>1.6.1</version>
 		</dependency>
 
+		<!--mysql java驱动-->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.21</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.osgeo/proj4j -->
 		<dependency>
 			<groupId>org.osgeo</groupId>

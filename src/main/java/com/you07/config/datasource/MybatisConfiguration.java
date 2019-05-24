@@ -34,6 +34,8 @@ public class MybatisConfiguration extends MybatisAutoConfiguration {
     private DataSource postgresGisDataSource;
     @Resource(name = "postgresEasDataSource")
     private DataSource postgresEasDataSource;
+    @Resource(name = "mysqlIdataDataSource")
+    private DataSource mysqlIdataDataSource;
 
 
     public MybatisConfiguration(MybatisProperties properties, ObjectProvider<Interceptor[]> interceptorsProvider,
@@ -61,6 +63,7 @@ public class MybatisConfiguration extends MybatisAutoConfiguration {
         targetDataResources.put(DataBaseContextHolder.DataBaseType.POSTGRESDEFAULT,postgresDefaultDataSource);
         targetDataResources.put(DataBaseContextHolder.DataBaseType.POSTGRESGIS,postgresGisDataSource);
         targetDataResources.put(DataBaseContextHolder.DataBaseType.POSTGRESEAS,postgresEasDataSource);
+        targetDataResources.put(DataBaseContextHolder.DataBaseType.MYSQLIDATA,mysqlIdataDataSource);
         //设置默认数据源
         proxy.setDefaultTargetDataSource(postgresDefaultDataSource);
         proxy.setTargetDataSources(targetDataResources);

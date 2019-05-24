@@ -11,7 +11,7 @@ public class DynamicRoutingDataSource extends AbstractRoutingDataSource {
 
     @Override
     protected Object determineCurrentLookupKey() {
-//        System.out.println("此时获取到的数据源为："+DataBaseContextHolder.getDatabaseType());
+       System.out.println("此时获取到的数据源为："+DataBaseContextHolder.getDatabaseType());
         return DataBaseContextHolder.getDatabaseType();
     }
 }
